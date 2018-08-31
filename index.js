@@ -14,9 +14,9 @@ module.exports = {
       path.join(
         this.project.root,
         'node_modules',
-        'bodymovin/build/player'
+        'lottie-web/build/player'
       ),
-      { files: ['bodymovin.min.js'] }
+      { files: ['lottie.min.js'] }
     );
 
     bodymovin = map(
@@ -28,7 +28,7 @@ module.exports = {
   },
 
   included() {
-    this.import('vendor/bodymovin.min.js');
+    this.import('vendor/lottie.min.js');
   }
 
 };
