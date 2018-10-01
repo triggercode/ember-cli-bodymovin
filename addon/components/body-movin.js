@@ -44,7 +44,6 @@ export default Ember.Component.extend({
   willDestroyElement() {
     this._super(...arguments);
     this.get('animation').destroy();
-    bodymovin.destroy();
   },
 
   click() {
